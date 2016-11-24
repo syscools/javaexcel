@@ -7,7 +7,9 @@
 
 And then, run your java application in the command line by:
 
+```bash
 ./App.sh
+```
 
 The convention I used is:
 
