@@ -17,8 +17,11 @@ if [ $? -eq 0 ];then
     echo "-------------------------------------------------"
     echo "success. Please check excel output file generated"
     ls -l *.xlsx
+    ret=0
 else
     cat $log    
+    ret=1
 fi
 
-rm $log
+rm -f $log
+return $ret
